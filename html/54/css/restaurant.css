@@ -1,0 +1,74 @@
+html {
+    background-color: rgb(197, 221, 241);
+}
+
+header {
+    text-align: center;
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 30px;
+    background: rgb(0, 160, 255);
+    background: linear-gradient(90deg, rgba(0, 160, 255, 1) 0%, rgba(110, 201, 255, 1) 25%, rgba(188, 230, 255, 1) 50%, rgba(110, 201, 255, 1) 75%, rgba(0, 160, 255, 1) 100%)
+}
+
+header h1 {
+    color: blue;
+    font-size: 60px;
+
+}
+
+/*nav{
+    text-decoration: none;
+    font-size: 25px;
+
+}*/
+
+header a {
+    color: rgb(4, 4, 179);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+body {
+    color: blue;
+    width: 80%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+a:hover {
+    color: rgb(19, 146, 250);
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 40px;
+    color: blue;
+}
+
+h3 {
+    font-size: 50px;
+    text-decoration: none;
+    color: blue;
+}
+
+h3 a {
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+h3 a:hover {
+    color: yellow;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+article h4 {
+    letter-spacing: 4px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+
+article p {
+    transform: rotate(-2deg);
+}
