@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Please!</title>
+    <link rel="stylesheet" href="css/restaurant.css">
+    <style>
+        body{
+            width: 80%;
+            margin: auto;
+            font-family: 'Indie Flower', cursive;
+        }
+
+
+        label, input:not([type="radio"]), textarea {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        input {
+            font-family: 'Indie Flower', cursive;
+        }
+
+        button {
+            font-family: 'Indie Flower', cursive;
+            margin-bottom: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback Please!</h1>
+    
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                |
+                <a href="OurMenu.html">Menu</a>
+                |
+                <a href="AboutUs.html">About</a>
+                |
+                <a href="ContactUs.html">Contact</a>
+                |
+                <a href="https://www.google.com">Google</a>
+            </ul>
+        </nav>
+    </header>
+    <form method="POST" action="feedback.php">
+        <label for="first name">First Name:</label>
+        <input type="text" id="first name" name="first" minlength="5" maxlength="10" required>
+
+        <label for="last name">Last Name:</label>
+        <input type="text" id="last name" name="last" minlength="5" maxlength="15">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date visited">Date Visited:</label>
+        <input type="date" id="date visited" name="date visited" required>
+
+        <label for="rating">Rate Us!</label>
+        1
+        <input type="radio" name="rating" value="1">
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5" checked>
+        5
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter text here"></textarea>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
