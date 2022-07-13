@@ -1,0 +1,150 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'helvetica', 'arial', 'sans-serif';
+    padding-bottom: 30px;
+}
+
+nav,
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    padding-left: 2.5%;
+    /*in media query*/
+}
+
+li {
+    display: inline-block;
+    padding-right: 2em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    padding-left: 5%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+main {
+    padding-top: 2.5em;
+}
+
+header {
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-bottom: 2em;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+header>h2 {
+    text-transform: uppercase;
+}
+
+div {
+    text-align: center;
+}
+
+#signUp {
+    background-color: lightgrey;
+    padding: 2em;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+input {
+    box-shadow: 3px 3px rgb(96, 95, 95);
+    margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+td:last-child {
+    color: red;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 1000px) {
+    #products {
+        display: grid;
+        grid-template-areas:
+            "title title title"
+            "desc  desc  desc"
+            "1     2     3"
+        ;
+        padding-bottom: 10px;
+    }
+
+    #products>h3 {
+        grid-area: title;
+    }
+
+    #products>p {
+        grid-area: desc;
+    }
+
+    div>img {
+        margin: 10px;
+    }
+
+    div>video {
+        margin: 10px;
+    }
+
+    div>p {
+        margin: 10px;
+        text-align: justify;
+    }
+
+    div.computer {
+        border-right: 1px solid black;
+    }
+
+    div.choir {
+        border-right: 1px solid black;
+    }
+
+}
