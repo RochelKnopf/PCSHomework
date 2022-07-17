@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+        header {
+            background-color: lightgray;
+            padding: .5em;
+            text-align: center;
+            font-size: xx-large;
+            grid-area: header;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "1"
+                "2"
+                "3"
+                "4"
+                "5"
+            ;
+        }
+
+        #1 {
+            grid-area: 1;
+        }
+
+        #2 {
+            grid-area: 2;
+        }
+
+        #3 {
+            grid-area: 3;
+        }
+
+        #4 {
+            grid-area: 4;
+        }
+
+        #5 {
+            grid-area: 5;
+        }
+
+        figure {
+            border: 1px solid black;
+            width: 80%;
+            align-items: center;
+        }
+
+        figure>img {
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 800px) {
+            body{
+                grid-template-areas: 
+                    "header header header"
+                    "1      2      3     "
+                    "4      5      .     "
+                ;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>Our Menu</header>
+    <figure class="1">
+        <h2>Steak</h2>
+        <img src="images/steak.jpg" alt="steak">
+        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam a labore
+            suscipit officia rem nostrum odio corporis natus maxime! Atque natus sint velit
+            aspernatur, aliquam laboriosam repellendus nemo quas?</figcaption>
+    </figure>
+    <figure class="2">
+        <h2>Hamburger</h2>
+        <img src="images/hamburgerWithFries.jpg" alt="burger">
+        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae inventore
+            placeat repellat numquam, minima ea tenetur incidunt expedita fugit quis in ratione
+            sunt, error, eaque corporis minus nobis veritatis.</figcaption>
+    </figure>
+    <figure class="3">
+        <h2>Hotdog</h2>
+        <img src="images/hot-dogs.jpg" alt="hotdogs">
+        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, provident
+            deleniti recusandae at eos magnam corrupti, inventore facere voluptatibus nesciunt
+            neque, veritatis officia culpa tempora qui aliquid quidem in doloremque.</figcaption>
+    </figure>
+    <figure class="4">
+        <h2>Shnitzel</h2>
+        <img src="images/Shnitzel.jpg" alt="shnitzel">
+        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At dicta fugiat dolor
+            similique ullam, iste commodi porro. Consequuntur quisquam veritatis quo, et commodi,
+            maiores neque, in vel harum quam quas.</figcaption>
+    </figure>
+    <figure class="5">
+        <h2>Moroccan Cigars</h2>
+        <img src="images/moroccanCigars.jpg" alt="cigars">
+        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aperiam
+            laboriosam, alias fugit, optio minima facere quae in, officia blanditiis dolor molestiae
+            incidunt eveniet! Sapiente molestias debitis modi quod tenetur!</figcaption>
+    </figure>
+</body>
+
+</html>
