@@ -1,0 +1,7 @@
+Nice!
+Some comments:
+- I needed to make a nested 62 folder and add the pictures to see page correctly...
+- form not changing layout on small screen
+- as browser gets narrower, products stays wider then header and signup form. looks wrong...
+
+grade - 93
