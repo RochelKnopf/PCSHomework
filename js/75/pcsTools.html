@@ -12,33 +12,29 @@
   <h1 id="joe">Joe Biden</h1>
   <script src="pcsTools.js"></script>
   <script>
-    //const joe = app.pcsTools.get('#joe');
-    //app.pcsTools.setCss(joe, 'color', 'red');
-
-    //const j = document.querySelector('#joe');
-    //j.style.color = 'red';
-
     /* const joe = app.pcsTools.wrap('#joe');
     joe.setCss('color', 'red');
     console.log(joe.getCss('color')); */
 
-    /* const joe = app.pcsTools.wrap('#joe');
-    joe.css('color', 'red');
-    console.log(joe.css('color'));
+    /*  const joe = app.pcsTools.wrap('#joe');
+     joe.css('color', 'red');
+     console.log(joe.css('color'));
+ 
+     console.log(joe.css('color', undefined));
+ 
+     joe.click(event => console.log('joe was clicked', event));
+ 
+     joe.hide(); */
 
-    joe.click(() => console.log('Joe was clicked!'));
-
-    joe.hide(); */
-
-    //setTimeout(() => joe.show(), 2000);
+    setTimeout(() => joe.show(), 2000);
 
     const joe = app.pcsTools.wrap('#joe')
-                                        .css('color', 'red')
-                                        .click(event => console.log('joe was clicked!', event))
-                                        .hide()
-                                        .flash(document.body, '1000');
+                            .css('color', 'red')
+                            .click(event => console.log('joe was clicked', event))
+                            .hide()
+                            .show()
+                            .flash(5, 1000);
 
-    
 
   </script>
 </body>

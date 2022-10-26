@@ -1,7 +1,7 @@
 window.app = window.app || {};
 window.app.pcsTools = (function () {
   'use strict';
-  
+
   function get(selector) {
     return document.querySelector(selector);
   }
@@ -14,7 +14,7 @@ window.app.pcsTools = (function () {
     return elem.style[property];
   }
 
-  function addEventListener(elem, type, callback){
+  function addEventListener(elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 
@@ -30,47 +30,44 @@ window.app.pcsTools = (function () {
     return `rgb(${r}, ${g}, ${b})`;
   }
 
-  function flashColors(elem, interval){
-    setInterval(() => {
-      elem.style.color = getRandomColor();
-    }, interval);
-  }
-
   return {
-    wrap: function (selector){
+    wrap: function (selector) {
       const elem = get(selector);
-
       return {
         /* setCss: (property, value) => setCss(elem, property, value),
         getCss: (property) => getCss(elem, property) */
 
-        css: (property, value)  => {
-          if(arguments.length === 2) {
+        css: function(property, value) {
+          if (arguments.length === 2) {
             setCss(elem, property, value);
             return this;
           } else {
             return getCss(elem, property);
           }
         },
-        click: function (callback) {
+        click: function(callback) { 
           addEventListener(elem, 'click', callback);
           return this;
         },
-        hide: function (){
+        hide: function () { 
           setCss(elem, 'display', 'none');
           return this;
         },
-        show: function(displayValue = 'block') {
+        show: function(displayValue = 'block')  {
           setCss(elem, 'display', displayValue);
           return this;
         },
-        flash: function (elem, interval) {
-          flashColors(elem, interval);
+        flash: function (speed) {
+          setInterval(() => {
+            const color = getRandomColor();
+            setCss(elem, 'color', color);
+          }, speed);
           return this;
         }
 
       };
     }
-    
   };
 })();
+
+
