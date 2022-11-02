@@ -1,0 +1,14 @@
+[
+    {
+        "name": "shnitzel",
+        "url": "shnitzel.json"
+    },
+    {
+        "name": "fries",
+        "url": "fries.json"
+    },
+    {
+        "name": "greenBeand",
+        "url": "greenBeans.json"
+    }
+]
