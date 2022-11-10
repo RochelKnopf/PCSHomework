@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Fire Poppers",
+        "image": "images/firePoppers.jpg"
+    },
+    {
+        "name": "Curly Fries",
+        "image": "images/curlyFries.jpg"
+    },
+    {
+        "name": "French Fries",
+        "image": "images/frenchFries.jpg"
+    },
+    {
+        "name": "Hamburger",
+        "image": "images/hamburgerWithFries.jpg"
+    },
+    {
+        "name": "Hot Dog",
+        "image": "images/hotDogs.jpg"
+    },
+    {
+        "name": "Moroccan Cigars",
+        "image": "images/moroccanCigars.jpg"
+    },
+    {
+        "name": "Onion Rings",
+        "image": "images/onionRings.jpg"
+    },
+    {
+        "name": "Shnitzel",
+        "image": "images/shnitzel.jpg"
+    },
+    {
+        "name": "Steak",
+        "image": "images/steak.jpg"
+    },
+    {
+        "name": "Sweet Potato Fries",
+        "image": "images/sweetPotatoFries.jpg"
+    }
+]
