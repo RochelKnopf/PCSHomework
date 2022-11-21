@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fascinate&family=Indie+Flower&family=Pacifico&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="images/favicon.jpg">
+    <title>PCS Pics</title>
+    <style>
+        body {
+            
+            background-color: #FFB4A2;
+            
+        }
+
+        header {
+            background-color: #e5989b;
+            text-align: center;
+            border: 10px solid #b5838d;
+            border-radius: 30px;
+            border-style: double;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: #b5838d;
+            margin: 0;
+        }
+
+        #pictureArea {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .pictureDiv {
+            background-color: #e5989b;
+            text-align: center;
+            margin: 10px;
+            border: 10px solid #b5838d;
+            border-radius: 30px;
+            border-style: double;
+        }
+
+        .pictureDiv img {
+            padding: 10px;
+            width: 90%;
+            border-radius: 30px;
+            border-color: #b5838d;
+            padding-bottom: 0px;
+        }
+
+        .pictureDiv h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            color: #b5838d;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PCS Pics</h1>
+    </header>
+
+    <main id="pictureArea">
+        <!-- <div class="pictureDiv">
+            <img src="images/steak.jpg">
+            <h2>Steak</h2>
+        </div> -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+    </script>
+    <script src="pics.js"></script>
+</body>
+
+</html>

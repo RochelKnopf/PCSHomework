@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Potato Head</title>
+    <style>
+        header {
+            background-color: red;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #parts {
+            margin-top: .5em;
+            height: 750px;
+            width: 20%;
+            float: left;
+            background: rgba(0, 0, 255, 0.664);
+            width: 20%;
+        }
+
+        #parts .part {
+            position: relative;
+            height: 15%;
+        }
+
+        #parts .part img {
+            position: absolute;
+
+        }
+
+        #face {
+            margin-top: .5em;
+            margin-left: .5em;
+        }
+
+        #face img {
+            padding: 2.5%;
+            height: 70%;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            vertical-align: middle;
+            margin: auto;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mr. Potato Head</h1>
+    </header>
+
+    <div id="parts">
+        <img src="images/eyes.png" class="part">
+        <img src="images/eyes2.png" class="part">
+        <img src="images/eyes3.png" class="part">
+        <img src="images/eyes4.png" class="part">
+        <img src="images/eyes5.png" class="part">
+        <img src="images/glasses.png" class="part"">
+        <img src=" images/leftEar.png" class="part">
+        <img src="images/rightEar.png" class="part">
+        <img src="images/mouth.png" class="part">
+        <img src="images/mouth2.png" class="part">
+        <img src="images/nose.png" class="part">
+        <img src="images/nose2.png" class="part">
+        <img src="images/teeth.png" class="part">
+    </div>
+    <div id="face">
+        <img src="images/face.png" alt="face">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <script src="potatoHead.js"></script>
+</body>
+
+</html>
