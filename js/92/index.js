@@ -18,11 +18,13 @@
             this.items = items;
         }
 
+        // SL - hmm. Total should be calculated from items. What if an item is added/removed/changed?
         get Total(){
             return this.total;
         }
     }
 
+    // SL - nice
     function createOrder(order){
         const theOrder = new Order(order.customer, order.address, order.total, order.items);
         theOrder.items.forEach(item => {
@@ -45,9 +47,12 @@
                 <h4>Quantity: ${item.quantity}</h4>
                 <h4>Total: $${item.total}</h4>
                 `).appendTo(document.body);
+
+                // SL - doesnt order have total getter? Why are we calculating it ourselves here?
                 total += (item.quantity * item.total);
             });
 
+            // SL - rather then Math.round x * 100 / 100 you might look at .toFixed which javascript supports on numbers
             $(`<br/>
             <h3>Total: $${Math.round(total * 100) / 100}</h3>
             `).appendTo(document.body);
@@ -71,3 +76,5 @@
     });
 
 })();
+
+// SL - grade 97
