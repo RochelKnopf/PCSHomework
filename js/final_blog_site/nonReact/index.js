@@ -4,6 +4,7 @@
 
     const mainPage = document.getElementsByClassName('mainPage');
 
+    // SL - not a problem, but why not make these divs and titles in the html? Would be a little less code (post page would have to be hidden via css)
     const userPage = document.createElement('div');
     userPage.setAttribute('class', 'userPage');
 
@@ -63,6 +64,7 @@
 
         userBox.addEventListener('click', async () => {
             const posts = await fetchPosts(user.id);
+            // SL - no harm but why? your about to remove the whole user page in displayPosts
             userBox.remove();
         });
 
@@ -115,6 +117,7 @@
 
         mainPage[0].append(postPage);
 
+        // SL - using modulus for knowing if its open or close works but I think toggling a simple boolean would be more instantly understandable
         let numClicks = 0;
         button.addEventListener('click', async () => {
             numClicks++;
@@ -152,6 +155,7 @@
             }
             else {
                 let elements = postBox.querySelectorAll(".commentsDiv");
+                // SL - not a problem, but theres only ever 1 commentsDiv
                 for(let i = 0; i < elements.length; i ++) {
                     elements[i].parentNode.removeChild(elements[i]);
                 }
@@ -181,3 +185,8 @@
 
     await fetchUsers();
 })();
+
+// SL - the home button is a full page reload. ok - but would have been simple to make it not be, something like this (with added code to remove whatevers there currently)...
+// document.querySelector('#home').addEventListener('click', fetchUsers);
+
+// Sl - nice!. no react version?
