@@ -1,0 +1,21 @@
+button, input {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 3em);
+  grid-auto-rows: 3em;
+  gap: 1em;
+}
+
+.calculator input {
+  grid-column: 1/5;
+  text-align: right;
+}
+
+.calculator button:last-child {
+  grid-column: 1/5;
+}
