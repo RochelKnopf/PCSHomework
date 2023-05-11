@@ -1,0 +1,106 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  padding: 1em;
+  background-color: lightslategray;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.userPage {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.userPageTitle {
+  grid-column: 1/4;
+  text-align: center;
+  color: lightslategray;
+  font-size: 2em;
+}
+
+.user {
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr;
+  background-color: lightslategray;
+  padding: .5em;
+  text-align: center;
+}
+
+.blogPage {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+.blogPageTitle {
+  grid-column: 1/6;
+  text-align: center;
+  color: lightslategray;
+  font-size: 2em;
+}
+
+.post {
+  background-color: lightslategray;
+  padding: 1em;
+  text-align: center;
+  grid-column: 2/5;
+}
+
+.postPage {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+.subject {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+}
+
+.postContent {
+  background-color: lightslategray;
+  padding: 1em;
+  text-align: center;
+}
+
+.show {
+  background-color: lightgray;
+  padding: .5em;
+  outline-color: lightgrey;
+}
+
+.comment {
+  background-color: lightgrey;
+  padding: 1em;
+  margin: 1em;
+  text-align: left;
+}
+
+.comment .email {
+  text-decoration: underline;
+}
