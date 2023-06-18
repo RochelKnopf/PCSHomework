@@ -1,0 +1,8 @@
+<form method="POST" action="login">
+  <input name="username" placeholder="username"/>
+  <input type="password" name="password" placeholder="password"/>
+  <button>login</button>
+  <a href="/register">register</a>
+</form>
+
+<p>Welcome to {{ title }}</p>
